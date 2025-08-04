@@ -3,17 +3,36 @@
 import React from 'react';
 import Navbar from './components/navbar';
 import Hero from './components/hero';
+import About from './components/about'; // Impor komponen About yang baru
+import { motion } from 'framer-motion'; // Impor motion
+
+// Konfigurasi animasi sederhana
+const sectionAnimation = {
+  initial: { opacity: 0, y: 50 },
+  whileInView: { opacity: 1, y: 0 },
+  transition: { duration: 0.8, ease: "easeOut" },
+  viewport: { once: true } // Animasi hanya berjalan sekali
+};
 
 function App() {
   return (
-    // Latar belakang utama bisa diatur di sini jika ada bagian lain selain Hero
     <div className="bg-brand-pink"> 
       <Navbar />
       <main>
-        <Hero />
-        {/* Contoh section lain dengan warna latar berbeda untuk variasi */}
-        {/* <div id="about" className="min-h-screen bg-white">About Section</div> */}
-        {/* <div id="projects" className="min-h-screen bg-brand-pink">Projects Section</div> */}
+        {/* Bungkus setiap section dengan motion.div */}
+        <motion.div {...sectionAnimation}>
+          <Hero />
+        </motion.div>
+        
+        <motion.div {...sectionAnimation}>
+          <About />
+        </motion.div>
+
+        {/* Anda bisa menambahkan section lain di sini dengan pola yang sama */}
+        {/* <motion.div {...sectionAnimation} id="projects">
+          // ... Isi komponen Projects ...
+        </motion.div> 
+        */}
       </main>
     </div>
   );
