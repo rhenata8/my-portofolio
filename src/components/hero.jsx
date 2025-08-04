@@ -1,42 +1,39 @@
-// src/components/Hero.jsx
+// src/components/hero.jsx
 
 import React from 'react';
 import { FaLinkedin, FaGithub, FaInstagram, FaDownload, FaReact, FaJsSquare, FaHtml5 } from 'react-icons/fa';
 import { SiTailwindcss } from 'react-icons/si';
-import profileImage from '../assets/profile-image.jpg';
+// Pastikan path ke gambar Anda sudah benar
+import profileImage from '/src/assets/profile-image.jpg'; 
 
 const Hero = () => {
   return (
-    // Ganti background section menjadi pink pastel
+    // Latar belakang dan semua warna aksen diubah ke palet "Soft Rose"
     <section id="home" className="min-h-screen flex items-center bg-brand-pink pt-20">
-      <div className="container mx-auto px-6 flex flex-col-reverse lg:flex-row items-center justify-between">
+      <div className="container mx-auto px-12 flex flex-col-reverse lg:flex-row items-center justify-between">
         
-        {/* Bagian Kiri: Teks dan Tombol */}
         <div className="lg:w-1/2 text-center lg:text-left">
           <h1 className="text-4xl md:text-6xl font-extrabold text-brand-dark">
-            Hi, I'm Hizkia Siahaan 👋
+            Hi, I'm Rhenata Evrilia Putri 👋
           </h1>
-          {/* Ganti warna teks "Frontend Developer" */}
           <h2 className="text-2xl md:text-3xl font-semibold text-brand-primary mt-2">
-            Frontend Developer
+            Frontend Developer Enthusiast
           </h2>
           <p className="mt-4 text-gray-700 max-w-lg mx-auto lg:mx-0">
-            I build modern, responsive web apps with clean UI and smooth UX blending design and code to create experiences that feel intuitive, fast, and delightful to use.
+           I’m a front-end enthusiast focused on building responsive, accessible, and well-structured user interfaces with clean and efficient code
           </p>
 
           <div className="mt-6">
             <span className="text-gray-700 mr-4">Follow me on:</span>
             <div className="inline-flex space-x-4">
-              {/* Ganti warna hover ikon sosial media */}
-              <a href="#" className="text-brand-dark hover:text-brand-primary text-2xl"><FaLinkedin /></a>
-              <a href="#" className="text-brand-dark hover:text-brand-primary text-2xl"><FaGithub /></a>
-              <a href="#" className="text-brand-dark hover:text-brand-primary text-2xl"><FaInstagram /></a>
+              <a href="#" className="text-brand-dark hover:text-brand-primary text-2xl transition duration-300"><FaLinkedin /></a>
+              <a href="#" className="text-brand-dark hover:text-brand-primary text-2xl transition duration-300"><FaGithub /></a>
+              <a href="#" className="text-brand-dark hover:text-brand-primary text-2xl transition duration-300"><FaInstagram /></a>
             </div>
           </div>
           
           <div className="mt-8 flex justify-center lg:justify-start space-x-4">
-            {/* Ganti warna tombol utama */}
-            <a href="#projects" className="bg-brand-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-brand-secondary transition duration-300">
+            <a href="#projects" className="bg-brand-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-brand-secondary transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
               Explore My Project
             </a>
             <a href="/cv.pdf" download className="bg-white border border-gray-300 text-brand-dark px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300 flex items-center gap-2">
@@ -45,7 +42,6 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Bagian Kanan: Gambar dan Ikon Skill */}
         <div className="lg:w-1/2 flex justify-center mb-10 lg:mb-0">
           <div className="relative">
             <img 
@@ -53,7 +49,6 @@ const Hero = () => {
               alt="Hizkia Siahaan" 
               className="w-72 h-72 md:w-80 md:h-80 rounded-full object-cover shadow-2xl border-4 border-white"
             />
-            {/* Kita bisa biarkan warna ikon skill tetap asli agar dikenali, atau sesuaikan */}
             <div className="absolute top-5 -left-5 bg-white p-3 rounded-full shadow-lg animate-bounce">
               <FaReact className="text-5xl text-cyan-400" />
             </div>
