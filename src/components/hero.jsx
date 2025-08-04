@@ -1,37 +1,77 @@
-import React from 'react';
-// import profile from '../assets/profile.jpg'; // Ganti dengan foto kamu
+// src/components/Hero.jsx
 
-function Hero() {
+import React from 'react';
+import { FaLinkedin, FaGithub, FaInstagram, FaDownload, FaReact, FaJsSquare, FaHtml5 } from 'react-icons/fa';
+import { SiTailwindcss } from 'react-icons/si';
+import profileImage from '../assets/profile-image.jpg';
+
+const Hero = () => {
   return (
-    <section id="home" className="py-20 px-4 bg-white">
-      <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-10">
-        <div className="flex-1">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Hi, I’m <span className="text-blue-600">Your Name</span> 👋
+    // Ganti background section menjadi pink pastel
+    <section id="home" className="min-h-screen flex items-center bg-brand-pink pt-20">
+      <div className="container mx-auto px-6 flex flex-col-reverse lg:flex-row items-center justify-between">
+        
+        {/* Bagian Kiri: Teks dan Tombol */}
+        <div className="lg:w-1/2 text-center lg:text-left">
+          <h1 className="text-4xl md:text-6xl font-extrabold text-brand-dark">
+            Hi, I'm Hizkia Siahaan 👋
           </h1>
-          <h2 className="text-xl md:text-2xl text-gray-700 font-semibold mb-6">
+          {/* Ganti warna teks "Frontend Developer" */}
+          <h2 className="text-2xl md:text-3xl font-semibold text-brand-primary mt-2">
             Frontend Developer
           </h2>
-          <p className="text-gray-600 mb-6">
-            I build modern, responsive web apps with clean UI and smooth UX blending design and code to create delightful experiences.
+          <p className="mt-4 text-gray-700 max-w-lg mx-auto lg:mx-0">
+            I build modern, responsive web apps with clean UI and smooth UX blending design and code to create experiences that feel intuitive, fast, and delightful to use.
           </p>
-          <div className="flex space-x-4 mb-6">
-            <a href="#" className="bg-gray-900 text-white px-4 py-2 rounded shadow hover:bg-gray-800">Explore My Project</a>
-            <a href="#" className="border border-gray-900 text-gray-900 px-4 py-2 rounded hover:bg-gray-100">Download My CV</a>
+
+          <div className="mt-6">
+            <span className="text-gray-700 mr-4">Follow me on:</span>
+            <div className="inline-flex space-x-4">
+              {/* Ganti warna hover ikon sosial media */}
+              <a href="#" className="text-brand-dark hover:text-brand-primary text-2xl"><FaLinkedin /></a>
+              <a href="#" className="text-brand-dark hover:text-brand-primary text-2xl"><FaGithub /></a>
+              <a href="#" className="text-brand-dark hover:text-brand-primary text-2xl"><FaInstagram /></a>
+            </div>
           </div>
-          <div className="flex space-x-4">
-            <a href="#"><i className="fa-brands fa-github text-xl"></i></a>
-            <a href="#"><i className="fa-brands fa-linkedin text-xl"></i></a>
-            <a href="#"><i className="fa-brands fa-instagram text-xl"></i></a>
-            <a href="#"><i className="fa-brands fa-twitter text-xl"></i></a>
+          
+          <div className="mt-8 flex justify-center lg:justify-start space-x-4">
+            {/* Ganti warna tombol utama */}
+            <a href="#projects" className="bg-brand-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-brand-secondary transition duration-300">
+              Explore My Project
+            </a>
+            <a href="/cv.pdf" download className="bg-white border border-gray-300 text-brand-dark px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300 flex items-center gap-2">
+              <FaDownload /> Download My CV
+            </a>
           </div>
         </div>
-        <div className="flex-1 relative">
-          <img src={profile} alt="Profile" className="w-64 h-64 object-cover rounded-full border-4 border-white shadow-lg mx-auto" />
+
+        {/* Bagian Kanan: Gambar dan Ikon Skill */}
+        <div className="lg:w-1/2 flex justify-center mb-10 lg:mb-0">
+          <div className="relative">
+            <img 
+              src={profileImage} 
+              alt="Hizkia Siahaan" 
+              className="w-72 h-72 md:w-80 md:h-80 rounded-full object-cover shadow-2xl border-4 border-white"
+            />
+            {/* Kita bisa biarkan warna ikon skill tetap asli agar dikenali, atau sesuaikan */}
+            <div className="absolute top-5 -left-5 bg-white p-3 rounded-full shadow-lg animate-bounce">
+              <FaReact className="text-5xl text-cyan-400" />
+            </div>
+             <div className="absolute top-10 right-0 bg-white p-4 rounded-full shadow-lg animate-pulse">
+              <FaJsSquare className="text-4xl text-yellow-400" />
+            </div>
+            <div className="absolute bottom-5 -right-5 bg-white p-3 rounded-full shadow-lg">
+              <SiTailwindcss className="text-5xl text-cyan-500" />
+            </div>
+            <div className="absolute bottom-0 -left-10 bg-white p-4 rounded-full shadow-lg">
+              <FaHtml5 className="text-4xl text-orange-500" />
+            </div>
+          </div>
         </div>
+
       </div>
     </section>
   );
-}
+};
 
 export default Hero;
