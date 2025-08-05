@@ -4,23 +4,26 @@ import React from 'react';
 import Navbar from './components/navbar';
 import Hero from './components/hero';
 import About from './components/about';
-import Projects from './components/Projects'; // Impor komponen About yang baru
-import { motion } from 'framer-motion'; // Impor motion
+import Projects from './components/Projects';
+import Skills from './components/Skills';
+import Certificates from './components/Certificates';
+import Contact from './components/Contact';
+import { motion } from 'framer-motion';
 
-// Konfigurasi animasi sederhana
 const sectionAnimation = {
   initial: { opacity: 0, y: 50 },
   whileInView: { opacity: 1, y: 0 },
   transition: { duration: 0.8, ease: "easeOut" },
-  viewport: { once: true } // Animasi hanya berjalan sekali
+  viewport: { amount: 0.2 } 
 };
 
 function App() {
   return (
+    // Latar belakang utama diatur di sini
     <div className="bg-brand-pink"> 
       <Navbar />
       <main>
-        {/* Bungkus setiap section dengan motion.div */}
+        {/* Semua kelas background di motion.div dihapus */}
         <motion.div {...sectionAnimation}>
           <Hero />
         </motion.div>
@@ -32,14 +35,19 @@ function App() {
         <motion.div {...sectionAnimation}>
           <Projects />
         </motion.div>
-        {/* <motion.div>
-          <Projects />
-        </motion.div> */}
-        {/* Anda bisa menambahkan section lain di sini dengan pola yang sama */}
-        {/* <motion.div {...sectionAnimation} id="projects">
-          // ... Isi komponen Projects ...
-        </motion.div> 
-        */}
+        
+        <motion.div {...sectionAnimation}>
+          <Skills />
+        </motion.div>
+
+        <motion.div {...sectionAnimation}>
+          <Certificates />
+        </motion.div>
+
+        <motion.div {...sectionAnimation}>
+          <Contact />
+        </motion.div>
+
       </main>
     </div>
   );
