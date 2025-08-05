@@ -3,7 +3,8 @@
 import React from 'react';
 import Navbar from './components/navbar';
 import Hero from './components/hero';
-import About from './components/about'; // Impor komponen About yang baru
+import About from './components/about';
+import Projects from './components/Projects'; // Impor komponen About yang baru
 import { motion } from 'framer-motion'; // Impor motion
 
 // Konfigurasi animasi sederhana
@@ -28,6 +29,9 @@ function App() {
           <About />
         </motion.div>
 
+        {/* <motion.div>
+          <Projects />
+        </motion.div> */}
         {/* Anda bisa menambahkan section lain di sini dengan pola yang sama */}
         {/* <motion.div {...sectionAnimation} id="projects">
           // ... Isi komponen Projects ...
