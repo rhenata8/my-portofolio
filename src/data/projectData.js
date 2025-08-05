@@ -1,20 +1,20 @@
 // src/data/projectData.js
 
 // Impor gambar-gambar proyek Anda dari assets
-import project1Image from '../assets/projects/project1.jpg';
+import project1Image from '../assets/projects/project1.png';
 // import project2Image from '../assets/projects/project2.jpg';
 // import project3Image from '../assets/projects/project3.jpg';
 
 export const projects = [
   {
     id: 1,
-    title: 'AI ChatBot for Service',
+    title: 'Pokémon Explorer',
     image: project1Image,
-    description: 'An intelligent AI-powered chatbot designed to interact naturally with users, built with a focus on performance and scalability.',
-    tags: ['React', 'CSS', 'JavaScript', 'GenAI API'],
-    category: 'New',
-    demoUrl: '#',
-    codeUrl: '#',
+    description: 'A web application built with React to display a list of Pokémon. Users can browse, search, and view details about each Pokémon.',
+    tags: ['ReactJS', 'Vite', 'TailwindCSS', 'React Router', 'Context API'],
+    category: 'App',
+    demoUrl: 'https://pokemon-delta-ten.vercel.app/',
+    codeUrl: 'https://github.com/rhenata8/pokemon',
   },
 //   {
 //     id: 2,

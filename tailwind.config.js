@@ -11,12 +11,12 @@ export default {
         'brand-secondary': '#DB2777',// pink-600, untuk hover
         'brand-dark': '#fb3c84',
 
-        'navbar-pink': '#ff387d',
+        // 'navbar-pink': '#ff387d',
 
-        'brand-pink': '#FCE7F3',    // pink-100, untuk background lembut
-        'brand-primary': '#EC4899', // pink-500, untuk teks & tombol utama
-        'brand-secondary': '#DB2777',// pink-600, untuk hover
-        'brand-dark': '#fb3c84',     // purple-900, untuk teks gelap
+        // 'brand-pink': '#FCE7F3',    // pink-100, untuk background lembut
+        // 'brand-primary': '#EC4899', // pink-500, untuk teks & tombol utama
+        // 'brand-secondary': '#DB2777',// pink-600, untuk hover
+        // 'brand-dark': '#fb3c84',     // purple-900, untuk teks gelap
 
       },
     },

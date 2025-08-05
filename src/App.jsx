@@ -29,6 +29,9 @@ function App() {
           <About />
         </motion.div>
 
+        <motion.div {...sectionAnimation}>
+          <Projects />
+        </motion.div>
         {/* <motion.div>
           <Projects />
         </motion.div> */}
