@@ -1,7 +1,7 @@
 // src/components/Projects.jsx
 
 import React from 'react';
-import { projects } from '../data/projectData';
+import { projects } from '../data/projectsData';
 import { FaGithub } from 'react-icons/fa';
 import { FiArrowUpRight } from 'react-icons/fi';
 import { motion } from 'framer-motion';
