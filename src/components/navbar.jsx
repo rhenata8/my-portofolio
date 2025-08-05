@@ -5,11 +5,7 @@ import React from 'react';
 import { Link } from 'react-scroll';
 
 const Navbar = () => {
-
-  const navLinks = ["Home", "About", "Projects", "Experience", "Skills", "Testimonials", "Contact"];
-  
   const navLinks = ["Home", "About", "Projects", "Skills", "Github", "Certificates", "Contact"];
-
 
   return (
     <nav className="fixed top-8 left-1/2 transform -translate-x-1/2 z-10 bg-white/90 backdrop-blur-md shadow-lg rounded-full">
