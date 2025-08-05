@@ -66,7 +66,7 @@ const About = () => {
                 <FaUser className="text-brand-primary" /> Who Am I
               </h3>
               <p className="text-gray-600">
-                I'm a frontend developer who crafts responsive, interactive, and clean UIs. With a background in Informatics Engineering, I blend design sense with technical logic.
+                I am an Information Systems student passionate about front-end development, with hands-on experience in building web-based projects and strong organizational involvement.
               </p>
             </motion.div>
 
@@ -76,7 +76,7 @@ const About = () => {
                 <FaCompass className="text-brand-primary" /> My Approach
               </h3>
               <p className="text-gray-600">
-                I focus on user-centered design, performance, and accessibility, always evolving with modern tech to deliver seamless digital experiences.
+                I focus on building responsive, user-friendly interfaces through clean code, consistent design, and collaborative development.
               </p>
             </motion.div>
             
@@ -84,11 +84,11 @@ const About = () => {
             <motion.div variants={itemVariants} className="mt-8">
               <h3 className="text-2xl font-bold mb-4">Personal Info</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
-                <InfoItem icon={<FaBirthdayCake />} label="Date of Birth" value="December 02, 2004" />
-                <InfoItem icon={<FaEnvelope />} label="Email" value="rhenataevrilia@gmail.com" />
+                <InfoItem icon={<FaBirthdayCake />} label="Date of Birth" value="April 07, 2005" />
+                <InfoItem icon={<FaEnvelope />} label="Email" value="rhenadvan@gmail.com" />
                 <InfoItem icon={<FaMapMarkerAlt />} label="Place of Birth" value="Probolinggo, Indonesia" />
-                <InfoItem icon={<FaGraduationCap />} label="Education" value="Universitas Nurul Jadid" />
-                <InfoItem icon={<FaPhone />} label="Phone" value="+62 858 5262 5903" />
+                <InfoItem icon={<FaGraduationCap />} label="Education" value="Universitas Jember" />
+                <InfoItem icon={<FaPhone />} label="Phone" value="+62 823 3616 4684" />
               </div>
             </motion.div>
 
