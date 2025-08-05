@@ -3,14 +3,14 @@
 // CATATAN: Ganti placeholder di bawah dengan gambar sertifikat Anda.
 // Anda perlu menambahkan file gambar (misalnya, cert1.png, dll.) ke direktori `src/assets/certificates/`
 // lalu mengimpor dan menggunakannya di sini.
-import placeholderImage from '../assets/projects/project1.png'; // Menggunakan gambar yang ada sebagai placeholder
+import placeholderImage from '../assets/certificates/certificates1.png'; // Menggunakan gambar yang ada sebagai placeholder
 
 export const certificates = [
   {
     id: 1,
-    title: 'Learn the Fundamentals of JavaScript Programming',
-    issuer: 'Dicoding',
-    description: 'Learned the fundamentals of JavaScript as a core programming language in web development, covering topics such as language structure and data types.',
+    title: 'Git and Hacktoberfest Workshop',
+    issuer: 'UKM LAOS',
+    description: 'Participated in a workshop on utilizing Git to collaboratively monitor programming projects as part of the Hacktoberfest event.',
     image: placeholderImage,
   },
 //   {
